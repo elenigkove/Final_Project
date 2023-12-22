@@ -43,7 +43,7 @@ var mirador = Mirador.viewer({
 });
 
 
-// function to transform the text encoded in TEI with the xsl stylesheet "Frankenstein_text.xsl", this will apply the templates and output the text in the html <div id="text">
+// Function to transform the text encoded in TEI with the xsl stylesheet "Frankenstein_text.xsl", this will apply the templates and output the text in the html <div id="text">
 function documentLoader() {
 
     Promise.all([
@@ -68,7 +68,8 @@ function documentLoader() {
     });
   }
   
-// function to transform the metadate encoded in teiHeader with the xsl stylesheet "Frankenstein_meta.xsl", this will apply the templates and output the text in the html <div id="stats">
+
+// Function to transform the metadate encoded in teiHeader with the xsl stylesheet "Frankenstein_meta.xsl", this will apply the templates and output the text in the html <div id="stats">
   function statsLoader() {
 
     Promise.all([
@@ -100,19 +101,144 @@ function documentLoader() {
   function selectHand(event) {
   var visible_mary = document.getElementsByClassName('#MWS');
   var visible_percy = document.getElementsByClassName('#PBS');
+  var allTextElements = Array.from(document.querySelectorAll('p, add, del'));
   // Convert the HTMLCollection to an array for forEach compatibility
   var MaryArray = Array.from(visible_mary);
   var PercyArray = Array.from(visible_percy);
     if (event.target.value == 'both') {
-    //write an forEach() method that shows all the text written and modified by both hand (in black?). The forEach() method of Array instances executes a provided function once for each array element.
-     
-    } else if (event.target.value == 'Mary') {
-     //write an forEach() method that shows all the text written and modified by Mary in a different color (or highlight it) and the text by Percy in black. 
-     
+    // A method that shows all the text written and modified by both hand (in black).
+     MaryArray.forEach(function(element) {
+      element.style.color = 'black';
+    });
+     PercyArray.forEach(function(element) {
+      element.style.color = 'black';
+    });
+    } else if (event.target.value == 'Percy') {
+     // A method that shows all the text modified (add, del) by Percy in blue and the rest in black. 
+     MaryArray.forEach(function(element) {
+      element.style.color = 'black';
+    });
+     PercyArray.forEach(function(element) {
+      element.style.color = 'blue';
+    });
     } else {
-     //write an forEach() method that shows all the text written and modified by Percy in a different color (or highlight it) and the text by Mary in black.
-    
+     // A method that shows all the text modified (add, del) by Mary in orange and the text rest in black.
+     MaryArray.forEach(function(element) {
+      element.style.color = 'orange';
+    });
+     PercyArray.forEach(function(element) {
+      element.style.color = 'black';
+    });
     }
   }
-// write another function that will toggle the display of the deletions by clicking on a button
-// EXTRA: write a function that will display the text as a reading text by clicking on a button or another dropdown list, meaning that all the deletions are removed and that the additions are shown inline (not in superscript)
+
+
+  // A function that will toggle the display of the deletions by clicking on a button
+    function toggleDeletions(event) {
+      var deletions = document.getElementsByTagName('del');
+      var deletionsArray = Array.from(deletions);
+
+    deletionsArray.forEach(function(deletion) {
+      if (deletion.style.display === 'none') {
+        deletion.style.display = ''
+      } else {
+        deletion.style.display = 'none';
+      }
+    });
+  }
+
+
+ // A function that will display the text as a reading text by clicking on a button, meaning that all the deletions and notes are removed and the additions are shown inline (not in superscript)
+var isReadingMode = false;
+
+function readingMode(event) {
+  var deletions = document.getElementsByTagName('del');
+  var additions = document.getElementsByClassName('supraAdd');
+  var notes = document.getElementsByClassName('note');
+
+  Array.from(deletions).concat(Array.from(notes)).forEach(function(element) {
+    element.style.display = isReadingMode ? '' : 'none';
+  });
+
+  Array.from(additions).forEach(function(addition) {
+    if (isReadingMode) {
+      addition.style.verticalAlign = 'super';
+      addition.style.fontSize = '';
+    } else {
+      addition.style.verticalAlign = 'baseline';
+      addition.style.fontSize = 'inherit';
+    }
+  });
+
+  isReadingMode = !isReadingMode;
+}
+
+
+
+// Functions for the "Toggle deletions", "Reading mode" and "Toggle notes" buttons
+document.addEventListener('DOMContentLoaded', function() {
+    var toggleDeletionsButton = document.getElementById('toggleDeletionsButton');
+    toggleDeletionsButton.textContent = 'Hide deletions';
+    toggleDeletionsButton.classList.add('btn-success');
+
+    toggleDeletionsButton.addEventListener('click', function() {
+        var deletions = document.getElementsByTagName('del');
+        var areDeletionsVisible = Array.from(deletions).some(del => del.style.display !== 'none');
+
+        if (areDeletionsVisible) {
+            Array.from(deletions).forEach(function(del) {
+                del.style.display = 'none';
+            });
+            this.classList.remove('btn-success');
+            this.classList.add('btn-secondary');
+            this.textContent = 'Show deletions';
+        } else {
+            Array.from(deletions).forEach(function(del) {
+                del.style.display = ''; // or 'block', depending on how they should be displayed
+            });
+            this.classList.remove('btn-secondary');
+            this.classList.add('btn-success');
+            this.textContent = 'Hide deletions';
+        }
+    });
+});
+
+
+document.getElementById('readingModeButton').addEventListener('click', function() {
+  this.classList.toggle('btn-primary');
+  this.classList.toggle('btn-success');
+
+  if (this.classList.contains('btn-success')) {
+    this.textContent = 'Reading mode';
+  } else {
+    this.textContent = 'Reading mode';
+  }
+});
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    var toggleNotesButton = document.getElementById('toggleNotesButton');
+    toggleNotesButton.textContent = 'Hide notes'; // Set initial button text
+    toggleNotesButton.classList.add('btn-success'); // Set initial button class
+
+    toggleNotesButton.addEventListener('click', function() {
+        var notes = document.getElementsByClassName('note');
+        var isNotesVisible = Array.from(notes).some(note => note.style.display === 'block' || note.style.display === '');
+
+        if (isNotesVisible) {
+            Array.from(notes).forEach(function(note) {
+                note.style.display = 'none';
+            });
+            this.classList.remove('btn-success');
+            this.classList.add('btn-secondary');
+            this.textContent = 'Show notes';
+        } else {
+            Array.from(notes).forEach(function(note) {
+                note.style.display = 'block';
+            });
+            this.classList.remove('btn-secondary');
+            this.classList.add('btn-success');
+            this.textContent = 'Hide notes';
+        }
+    });
+});

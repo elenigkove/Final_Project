@@ -33,27 +33,27 @@
       <body>
          <div type="page" n="24r" rend="recto">
             <pb facs="#p24r"/>
-               <metamark function="pagenumber"><num><hi rend="circled">81</hi></num></metamark>
+            <metamark function="pagenumber"><num><hi rend="circled">81</hi></num></metamark>
             <p>
-               "and Indeed I believe I left him<lb/>
+               "and indeed I believe I left him<lb/>
                "incredulous to the last for his con<lb/>
                "stant answer to my applications<lb/>
-               "was the same as <add place="supralinear" hand="#MWS" rend="blackink">that of</add> the dutch school<lb/>
+               "was the same as <add place="infralinear" hand="#MWS" rend="black ink"><metamark>&#8257;</metamark></add><add place="supralinear" hand="#MWS" rend="black ink">that of</add> the dutch school<lb/><note>'^'is used as a text insertion metamark</note>
                "master in the Vicar of Wakefield-<lb/>
-               <add place="marginleft" hand="#MWS" rend="blackink">"<del type="crossedOut" hand="#MWS" rend="blackink">a year</del> with<lb/>"out greek -I<lb/>"eat heartily<lb/>withoug greek<lb/>of-</add>
-               <del type="crossedOut" hand="#MWS" rend="blackink">"I live very well yet I do not know</del><lb/>
-               <del type="crossedOut" hand="#MWS" rend="blackink">"Greek</del>" I have ten thousand florins-<lb/>
+               <add place="marginleft" hand="#MWS" rend="black ink">"<del type="crossedOut" hand="#MWS" rend="black ink">a year</del> with<lb/>"out greek -I<lb/>"eat heartily <lb/>withoug greek <lb/>of-<lb/></add>
+               <del type="crossedOut" hand="#MWS" rend="black ink">"I live very well yet I do not know</del><lb/>
+               <del type="crossedOut" hand="#MWS" rend="black ink">"Greek</del>" I have ten thousand florins-<lb/>
                "But his affection for me at<lb/>
                "lenght overcame his dislike for<lb/>
                "learning, and he permitted me<lb/>
-               "to <add place="supralinear" hand="#PBS" rend="blackink">under</add>take a voyage <add place="supralinear" hand="#PBS" rend="blackink">of discovery</add> to the land of<lb/>
+               "to <add place="infralinear" hand="#MWS" rend="black ink"><metamark>&#8257;</metamark></add><add place="supralinear" hand="#PBS" rend="black ink">under</add>take a voyage <add place="supralinear" hand="#PBS" rend="black ink">of discovery</add> to the land of<lb/><note>'^'is used as a text insertion metamark</note>
                "knowledge."<lb/>
             </p>
             <p>
                "And my father, brothers &amp; Eliza<lb/>
                beth" said I<lb/>
                "Very well &amp; very happy" replied<lb/>
-               he "only a little uneasy that <del type="crossedOut" hand="#MWS" rend="blackink">yo</del><lb/>
+               he "only a little uneasy that <del type="crossedOut" hand="#MWS" rend="black ink">yo</del><lb/>
                "they hear from you so seldom, &amp;<lb/>
                "by the bye, I mean to lecture you<lb/>
                "a little upon their account<lb/>
@@ -62,11 +62,13 @@
                "full in my face "I did not before<lb/>
                "remark how very ill you are. So thin<lb/>
                "and pale; you appear as if you had<lb/>
-               "been watching for several nights."<lb/>
+               "been watching for several nights."
+            </p>
+            <p>
                "You have guessed right" I replied<lb/>
                "I have lately been so engaged in<lb/>
-               "several<add place="supralinear" hand="#PBS" rend="blackink"><del type="crossedOut" hand="#PBS" rend="blackink">studious</del> one</add> occupations that I did<lb/>
-               <add place="marginleft" hand="#PBS" rend="blackink">have</add>"not allow<add place="overwritten" hand="#PBS" rend="blackink">ed</add><add place="supralinear" hand="#MWS" rend="blackink">myself</add> sufficient rest as you<lb/>
+               "<del type="crossedOut" hand="#MWS" rend="black ink">several</del> <add place="supralinear" hand="#PBS" rend="black ink"><del type="crossedOut" hand="#PBS" rend="black ink">studious</del> one</add> occupations that I <del type="crossedOut" hand="#MWS" rend="black ink">did</del><lb/>
+               <add place="marginleft" hand="#PBS" rend="black ink">have</add> "not allow<add place="overwritten" hand="#PBS" rend="black ink">ed</add> <add place="infralinear" hand="#MWS" rend="black ink"><metamark>&#8257;</metamark></add> <add place="supralinear" hand="#MWS" rend="black ink">myself</add> sufficient rest as you<lb/><note>'^'is used as a text insertion metamark</note>
             </p>
          </div>
       </body>

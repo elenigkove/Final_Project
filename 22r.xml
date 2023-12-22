@@ -28,86 +28,45 @@
       </sourceDesc>
     </fileDesc>
   </teiHeader>
-  <text>
-    <body>
-      <div type="page" n="22v" rend="recto">
-        <pb facs="#p22r"/>
-        <metamark function="pagenumber"><num><hi rend="circled">77</hi></num></metamark>
-      <p>
-         to change and I thought that I held <lb/>
-         the corpse of my dead mother in my arms 
-          <del type="overwritten" hand="#MWS" rend="blackink">,</del>
-          <add place="infralinear" hand="#MWS" rend="blackink">:</add>
-        <lb/>
-        
-          <del type="overwritten" hand="#MWS" rend="blackink">a</del> 
-          <add place="inline" hand="#MWS" rend="blackink">A</add>
-          shroud envolepped her form &amp; I saw 
-        <lb/>
-        the grave worms crawling in the folds of<lb/>
-        the flannel; I started 
-          <add place="infralinear" hand="#MWS" rend="blackink"><metamark></metamark></add>
-          <note>'^' is used as metamark, close visual resemblance</note>
-          <add place="supralinear" hand="#MWS" rend="blackink">from my sleep</add>
-          with horror, a
-        <lb/>
-        <del type="crossedOut" hand="#MWS" rend="blackink">when I saw</del>
-          cold dew covered my forehead
-        <lb/>
-        my teeth 
-          <del type="crossedOut" hand="#MWS" rend="blackink">ah</del>
-          chattered and every limb
-        <lb/>
-        
-          <del type="crossedOut" hand="#MWS" rend="blackink">was</del>
-          <add place="supralinear" hand="#MWS" rend="blackink">became</add>
-          convul
-          <del type="overwritten" hand="#MWS" rend="blackink"><!-- unclear char --></del>
-          <add place="inline" hand="#MWS" rend="blackink">s</add>
-          ed, when, by the dim and
-        <lb/>
-        yellow light of the moon as it forced<lb/>
-        its way through the window shutters, I<lb/>
-        beheld the wretch — the miserable<lb/>
-        monster whom I had created;
-          <add place="infralinear" hand="#MWS" rend="blackink"><metamark>-</metamark>
-            <note>'-'is used as metamark, a thick line is used</note>
-          </add>
-          he hel
-          <del type="overwritten" hand="#MWS" rend="blackink"><!-- unclear char --></del>
-          <add place="inline" hand="#MWS" rend="blackink">d</add>
-        <lb/>
-        up the curtain, 
-          <add place="infralinear" hand="#MWS" rend="blackink"><metamark>-</metamark>
-            <note>'-'is used as metamark, a thick line is used</note>
-          </add>
-          and his eyes; if eyes
-        <lb/>
-        they may be called, were fixed on me – His<lb/>
-        <add place="marginleft" hand="#PBS" rend="blackink">inarticulate</add>jaws opened and he muttered <add place="supralinear" hand="#PBS" rend="blackink">in</add> some <del type="crossedOut" hand="#MWS" rend="blackink">words</del><lb/>
-        <add place="marginleft" hand="#PBS" rend="blackink">sounds</add>while a grin wrinkled his cheeks. He<lb/>
-        he might have spoken but I did not<lb/>
-        hear — one <choice><sic>had</sic><corr>hand</corr></choice> was stretched out<lb/>
-        to detain me but I escaped and <del type="crossedOut" hand="#PBS" rend="blackink">ran</del><lb/>
-        rushed down <del type="crossedOut" hand="#PBS" rend="blackink"><add place="supralinear" hand="#PBS" rend="blackink">the</add></del> stairs I took refuge in<lb/>
-        a court-yard belonging to the house<lb/>
-        which I inhabited; where I remained<lb/>
-        <add place="marginleft" hand="#PBS" rend="blackink">during</add>the rest of the night walking up and<lb/>
-        down in the greatest agitation; listen<lb/>
-        ing attentively, catching and fearing each<lb/>
-        sound as if it were to announce the<lb/>
-        arrival of the demoniacal corpse to<lb/>
-        which I had so miserabl<del type="overwritten" hand="#PBS" rend="blackink">e</del><add place="inline" hand="#PBS" rend="blackink">y</add> given life.<lb/>
-        Oh! no mortal could support <lb/>
-        the horror of that countenance.a<lb/>
-        mummy
-        <metamark>&#8257;</metamark>
-        <add place="margintop" hand="#MWS" rend="blackink">again</add>
-        endued with 
-        <del type="crossedOut" hand="#MWS" rend="blackink">life</del>
-        <add place="supralinear" hand="#MWS" rend="blackink">animation</add> 
-          could not be<lb/>
-      </p></div>
+    <text>
+      <body>
+        <div type="page" n="22v" rend="recto">
+          <pb facs="#p22r"/>
+          <metamark function="pagenumber"><num><hi rend="circled">77</hi></num></metamark><lb/>
+           to change and I thought that I held <lb/>
+           the corpse of my dead mother in my arms<del type="overwritten" hand="#MWS" rend="black ink">,</del> <add place="overwritten" hand="#PBS" rend="black ink">:</add><lb/>
+           <del type="overwritten" hand="#MWS" rend="black ink">a</del><add place="overwritten" hand="#MWS" rend="black ink">A</add> shroud envolepped her form &amp; I saw<lb/>
+           the grave worms crawling in the folds of<lb/>
+           the flannel; I started <add place="infralinear" hand="#MWS" rend="black ink"><metamark>&#8257;</metamark></add> <add place="supralinear" hand="#MWS" rend="black ink">from my sleep</add> with horror, a<lb/><note>'^'is used as a text insertion metamark</note>
+           <del type="crossedOut" hand="#MWS" rend="black ink">when I saw</del> cold dew covered my forehead<lb/>
+           my teeth <del type="crossedOut" hand="#MWS" rend="black ink">ah</del> chattered and every limb<lb/>
+           <del type="crossedOut" hand="#MWS" rend="black ink">was</del> <add place="supralinear" hand="#PBS" rend="black ink">became</add> convul <del type="overwritten" hand="#MWS" rend="black ink"><!-- unclear char --></del><add place="inline" hand="#MWS" rend="black ink">s</add> ed, when, by the dim and<lb/>
+           yellow light of the moon as it forced<lb/>
+           its way through the window shutters, I<lb/>
+           beheld the wretch — the miserable<lb/>
+           monster whom I had created; <add place="infralinear" hand="#PBS" rend="black ink"><metamark>__</metamark></add> he hel<del type="overwritten" hand="#MWS" rend="black ink"></del><add place="inline" hand="#MWS" rend="black ink">d</add><lb/><note>'__'is used as metamark, a thick line is used</note>
+           up the curtain,<add place="infralinear" hand="#MWS" rend="black ink"><metamark>__</metamark></add> and his eyes; if eyes<lb/><note>'__'is used as metamark, a thick line is used</note>
+           they may be called, were fixed on me–His<lb/>
+           <add place="marginleft" hand="#PBS" rend="black ink">inarticulate</add>jaws opened and he muttered <add place="supralinear" hand="#PBS" rend="black ink"><del type="crossedOut" hand="#MWS" rend="black ink">in</del></add> some <del type="crossedOut" hand="#MWS" rend="black ink">words</del><lb/>
+           <add place="marginleft" hand="#PBS" rend="black ink">sounds</add>while a grin wrinkled his cheeks. He<lb/>
+           might have spoken but I did not<lb/>
+           hear — one <del type="crossedOut" hand="#MWS" rend="black ink">had</del> hand was stretched out<lb/>
+           to detain me but I escaped and <del type="crossedOut" hand="#MWS" rend="black ink">ran</del><lb/>
+           rushed <add place="supralinear" hand="#PBS" rend="black ink"><del type="crossedOut" hand="#MWS" rend="black ink">the</del></add> down stair<add place="inline" hand="#MWS" rend="black ink">s</add> <del type="crossedOut" hand="#PBS" rend="black ink">case</del> I took refuge in<lb/>
+           a court-yard belonging to the house<lb/>
+           which I inhabited; where I remained<lb/>
+           <add place="marginleft" hand="#PBS" rend="black ink">during</add>the rest of the night walking up and<lb/>
+           down in the greatest agitation; listen<lb/>
+           ing attentively, catching and fearing each<lb/>
+           sound as if it were to announce the<lb/>
+           arrival of the demoniacal corpse to<lb/>
+           which I had so miserabl<del type="overwritten" hand="#MWS" rend="black ink">e</del><add place="overwritten" hand="#PBS" rend="black ink">y</add> given life.<lb/>
+        <p>
+          Oh! no mortal could support<lb/>
+          the horror of that countenance. A<lb/>
+          mummy<add place="infralinear" hand="#MWS" rend="black ink"><metamark>&#8257;</metamark></add><add place="supralinear" hand="#MWS" rend="black ink">again</add> endued with <add place="supralinear" hand="#PBS" rend="black ink">animation</add> <del type="crossedOut" hand="#MWS" rend="black ink">life</del> could not be<lb/><note>'^'is used as a text insertion metamark</note>
+        </p>
+      </div>
     </body>
   </text>
 </TEI>

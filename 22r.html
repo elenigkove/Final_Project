@@ -51,9 +51,16 @@
       <div class="form-group">
         <select class="form-control" id="sel-hand" onChange="selectHand(event)">
           <option value="both">Both Hands</option>
-          <option value="Mary">Mary Shelley's Hand Highlighted</option>
-          <option value="Percy">Percy Shelley's Hand Highlighted</option>
+          <option value="Mary">Mary Shelley's Hand</option>
+          <option value="Percy">Percy Shelley's Hand</option>
         </select>
+        <button type="button" id="readingModeButton" class="btn btn-primary mt-2" onClick="readingMode(event)">Reading mode</button>
+        <button type="button" id="toggleDeletionsButton" class="btn btn-secondary mt-2" onClick="toggleNotes(event)">Toggle deletions</button>
+        <button type="button" id="toggleNotesButton" class="btn btn-secondary mt-2" onClick="toggleNotes(event)">Toggle notes</button>
+        <div class="navigation-buttons">
+          <a href="21v.html"><button class="btn btn-secondary">Previous page</button></a>
+          <a href="22v.html"><button class="btn btn-secondary">Next page</button></a>
+        </div>
       </div>
       <div class="row">
         <div class="col-5">   

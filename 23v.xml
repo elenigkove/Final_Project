@@ -31,46 +31,45 @@
   <text>
     <body>
       <div type="page" n="23v" rend="verso">
-        <pb facs="#p23v"/>
-        <metamark function="pagenumber"><num><hi rend="circled">80</hi></num></metamark>
+          <pb facs="#p23v"/>
+          <metamark function="pagenumber"><num><hi rend="circled">80</hi></num></metamark>
         <p>
-        <l>the doors being opened <unclear reason="ink blot">I</unclear> perceived Henry</l> 
-        <l>Clerval, who on <del type="crossedOut"/><unclear/>seeing me instantly sprung out.</l>
-      </p>
-      <p>
-        <l rend="indent"> "My dear Frankenstein," exclaimed he.</l>
-        <l>"How glad I am to see you; how</l>
-        <l>"fortunate <add place="supralinear">that</add> you should be here at</l>
-        <l>"the <add place="sublinear"><metamark function="insert">^</metamark></add>
-          <add place="supralinear">very</add> moment of my alighting"</l>
-      </p>
-      <p>
-        <l rend="indent">Nothing could equal my delight</l>
-        <l>on <del rend="crossedOut">see</del><choice><sic>seing</sic><corr>seeing</corr></choice> Clerval: his presence</l>
-        <l>brought back to my thoughts my fa-</l>
-        <l>ther, Elizabeth and all those scenes</l>
-        <l>of home so dear to my recollection.</l>
-        <l>I grasped his hand, and in a moment</l>
-        <l>forgot my horror and misfortune</l>
-        <l>I felt <add place="sublinear"><metamark function= "insert">^</metamark></add><add place="supralinear"> suddenly,<unclear reason="handwriting"> and</unclear></add> for the first time 
-          <del rend="crossedOut">for</del><add place="supralinear">during</add></l>
-        <l>many months, calm and serene</l>
-        <l>joy. I welcomed my friend therefore</l>
-        <l>in the most cordial manner &amp;</l>
-        <l>we walked towards my colledge.</l>
-        <l>Clerval <del rend="crossedOut">ran on</del><del rend="crossedOut"> talked</del> continued</l>
-        <l>talking for some time about <del rend="crossedOut">my</del><add place="supralinear">our mutual</add></l>
-        <l>friends and his <add place="supralinear">own</add> good fortune in</l>
-        <l>being allowed to come Ingolstadt.</l>
-      </p>
-      <p> 
-        <l>"You may believe", said he, "<del rend="crossedOut">that</del></l>
-        <l>"it was not with<del rend="crossedOut">out</del>considerable</l>
-        <l>"trouble that I persuaded my</l>
-        <l>"father that it is not absolutely</l>
-        <l>"necessary for a merchant to</l>
-        <l>"know nothing except bookeeping</l>
-      </p>
+           the doors being opened <unclear>I</unclear> perceived Henry<lb/>
+           Clerval, who on <del type="crossedOut" hand="#MWS" rend="black ink">seee</del> seeing me instantly<lb/>
+           sprung out.<lb/>
+        </p>
+        <p>
+           "My dear Frankenstien," exclaimed he<lb/>
+           "How glad I am to see you; how<lb/>
+           "fortunate <add place="supralinear" hand="#PBS" rend="black ink">that</add> you should be here at<lb/>
+           "the <add place="infralinear" hand="#PBS" rend="black ink"><metamark>&#8257;</metamark></add><add place="supralinear" hand="#PBS" rend="black ink">very</add> moment of my alighting."<lb/><note>'^'is used as a text insertion metamark</note>
+        </p>
+        <p>
+           Nothing could equal my delight<lb/>
+           on <del type="crossedOut" hand="#MWS" rend="black ink">see</del> seing Clerval: his presence<lb/>
+           brought back to my thoughts my fa-<lb/>
+           ther, Elizabeth and all those scenes<lb/>
+           of home so dear to my recollection.<lb/>
+           I grasped his hand, and in a moment<lb/>
+           forgot my horror and misfortune.<lb/>
+          I felt <add place="infralinear" hand="#PBS" rend="black ink"><metamark>&#8257;</metamark></add><add place="supralinear" hand="#PBS" rend="black ink">suddenly, and</add> for the first time <del type="crossedOut" hand="#MWS" rend="black ink">for</del> <add place="supralinear" hand="#PBS" rend="black ink">during</add> for<lb/><note>'^'is used as a text insertion metamark</note>
+           many months, calm and serene<lb/>
+           joy. I welcomed my friend therefore<lb/>
+           in the most cordial manner &amp;<lb/>
+           we walked towards my colledge.<lb/>
+           Clerval <del type="crossedOut" hand="#MWS" rend="black ink">ran on</del> <del type="crossedOut" hand="#MWS" rend="black ink">talked</del> continued<lb/>
+           talking for some time about <del type="crossedOut" hand="#MWS" rend="black ink">my</del> <add place="supralinear" hand="#PBS" rend="black ink">our mutual</add><lb/>
+           friends and his <add place="supralinear" hand="#PBS" rend="black ink">own</add> good fortune in<lb/>
+           being allowed to come Ingolstadt.<lb/>
+        </p>
+        <p> 
+           "You may believe," said he, <del rend="crossedOut">"that</del><lb/>
+           "it was not with<del type="crossedOut" hand="#MWS" rend="black ink">out</del> considerable<lb/>
+           "trouble that I persuaded my<lb/>
+           "father that it is not absolutely<lb/>
+           "necessary for a merchant to<lb/>
+           "know nothing except bookeeping<lb/>
+        </p>
       </div>                    
     </body>
   </text>

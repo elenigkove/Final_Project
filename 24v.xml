@@ -33,27 +33,27 @@
       <body>
          <div type="page" n="24v" rend="verso">
             <pb facs="#p24v"/>
-            <metamark function="pagenumber"><num><hi rend="circled">82</hi></num></metamark>
-         <p>
+            <metamark function="pagenumber"><num><hi rend="circled">82</hi></num></metamark><lb/>
             "see; but I hope, I sincerely hope all those<lb/>
             "occupations are at an end—I am free<lb/>
             "now I hope."<lb/>
+         <p>
             I trembled excessively: I could not<lb/>
             bear to think of, &amp; far less to allude<lb/>
-            to the occurences of the prece<del type="crossedOut">e</del>ding<lb/>
-            night. <del type="crossedOut">I continued to walk there</del> I<lb/>
+            to the occurences of the prece<del type="crossedOut" hand="#MWS" rend="black ink">e</del>ding<lb/>
+            night. <del type="crossedOut" hand="#MWS" rend="black ink">I continued to walk theire</del> I<lb/>
             walked therefore with a quick pace,<lb/>
             and we soon arrived at my colledge.<lb/>
-            I then reflected–and the thought made<lb/>
+            I then reflected – and the thought made<lb/>
             me shiver that the creature whom<lb/>
             I had left in my appartment might<lb/>
             be still there—alive and walking<lb/>
             about. I dreaded to see him but I<lb/>
             dreaded still more that Henry should<lb/>
-            behold the monst<del type="crossedOut">h</del>er.<del type="crossedOut">I therefore</del><lb/>
-            entreat<del type="crossedOut">ed</del><add>ing</add> him <add place="supralinear">therefore</add> to remain a few<lb/>
-            minutes at the bottom of the<lb/>
-            stairs, <del type="crossedOut">while</del>I darted upwards<lb/>
+            behold the monst<del type="crossedOut" hand="#MWS" rend="black ink">h</del>er. <del type="crossedOut" hand="#MWS" rend="black ink">I therefore</del><lb/>
+            entreat<del type="overwritten" hand="#MWS" rend="black ink">ed</del><add place="overwritten" hand="#PBS" rend="black ink">ing</add> him<add place="infralinear" hand="#PBS" rend="black ink"><metamark>&#8257;</metamark></add> <add place="supralinear" hand="#PBS" rend="black ink">therefore</add> to remain a few<lb/><note>'^'is used as a text insertion metamark</note>
+            minute<add place="overwritten" hand="#PBS" rend="black ink">s</add> at the bottom of the<lb/>
+            stairs, <del type="crossedOut" hand="#MWS" rend="black ink">while</del> I darted upwards<lb/>
             my own room. My hand was already<lb/>
             on the lock before I recovered<lb/>
             myself, when I paused and a cold<lb/>
@@ -63,10 +63,11 @@
             a spectre to stand in waiting for<lb/>
             them on the other side. But<lb/>
             nothing appeared. I stepped fearfully<lb/>
-            in–the appartment was empty, and<lb/>
+            in – the appartment was empty, and<lb/>
             my bedroon was also freed from its<lb/>
-            hideous guest. I could hardly <del type="crossedOut">belief</del><lb/>
-         </p></div>
+            hideous guest. I could hardly <del type="crossedOut" hand="#MWS" rend="black ink">belief</del><lb/>
+         </p>
+         </div>
       </body>
   </text>
 </TEI>
