@@ -3,6 +3,22 @@
 }
 
 
+.container {
+    display: flex; /* This defines a flex container */
+    justify-content: space-between; /* This spaces out the child elements */
+}
+
+.left-column {
+    flex: 1; /* This will allow the left column to grow */
+    /* Additional styling for the left column */
+}
+
+.right-column {
+    flex: 1; /* This will allow the right column to grow */
+    /* Additional styling for the right column */
+}
+
+
 .pageNumber {
   position: relative;
   float: right;
