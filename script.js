@@ -99,7 +99,9 @@ function documentLoader() {
   statsLoader();
   // Event listener for sel1 change
   function selectHand(event) {
-  var visible_mary = document.getElementsByClassName('#MWS');
+   var visible_mary = Array.from(
+    document.getElementById("text").querySelectorAll("*:not(#PBS)")
+    );
   var visible_percy = document.getElementsByClassName('#PBS');
   var allTextElements = Array.from(document.querySelectorAll('p, add, del'));
   // Convert the HTMLCollection to an array for forEach compatibility
