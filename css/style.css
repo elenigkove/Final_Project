@@ -1,0 +1,268 @@
+.chapterTitle {
+  text-align: center;
+}
+
+
+/*.container {
+  display: flex;
+  flex-wrap: nowrap; /* Prevents the flex items from wrapping */
+}*/
+
+.left-column {
+  flex: 1; /* Adjust this value as needed */
+  padding-right: 20px; /* Adds some space between the columns */
+}
+
+.right-column {
+  flex: 1; /* Adjust this value as needed */
+}
+
+
+
+.pageNumber {
+  position: relative;
+  float: right;
+  border: 1px solid black;
+  border-radius: 50%;
+  text-align: center;
+  
+  padding: 0.5em;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  width: 2em;
+  height: 2em;
+  
+  font-size: 1em;
+  line-height: 2em;
+}
+
+
+
+body {
+    background-color: #f8f8f8;
+    font-family: 'Roboto', 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333; /* Dark grey for text for readability */
+}
+
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+p {
+    text-indent: 10px;
+}
+
+.row {
+    width: 100%;
+    margin-left: 0;
+}
+
+.col {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.marginAdd {
+    display: none;
+}
+
+.mirador-canvas-nav {
+    display: none !important;
+}
+
+
+/* styling for heading1 */
+
+h1 {
+  text-align: center;
+  font-weight: bold;
+  color: #2e4053; /* Deep blue color */
+  text-shadow: 2px 2px #d5d8dc; /* Light gray shadow for depth */
+  margin: 20px 0;
+}
+
+
+/* styling for heading2 */
+
+#folio {
+    color: #ffffff; /* White text for contrast */
+    background-color: #4a4a4a; /* Dark gray background */
+    font-size: 1.2em; /* Larger font size for emphasis */
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    text-align: center;
+    line-height: 1.2em; /* Adjust line height to fit the font */
+    width: 50px; /* Smaller width for the square */
+    height: 50px; /* Smaller height for the square */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px; /* Margin to ensure some spacing around the element */
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Subtle shadow for a 3D effect */
+    border-radius: 3px; /* Slightly rounded corners */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+#folio:hover {
+    background-color: #6c757d; /* Lighter gray on hover */
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5); /* Enhanced shadow on hover */
+}
+
+
+
+
+
+
+
+/* styling for heading4 */
+
+h4 {
+    color: #6e675f; /* Warm gray, inviting and accessible */
+    font-family: 'Georgia', serif; /* Friendly yet professional font */
+    font-size: 1.3em;
+    border-bottom: 1px solid #34495e; /* Line under text */
+    padding-bottom: 4px;
+    margin-bottom: 12px;
+}
+
+
+
+
+
+/* styling for the infralinear text */
+
+.infralinear-text {
+  position: relative;
+  top: 0.3em;
+  font-size: 85%;
+  line-height: 1;
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.text-indent-false{
+  text-indent: 0;
+}
+
+
+/* styling for the added ovewritten text */
+
+.overwritten-text {
+  font-style: italic;
+}
+
+
+/* styling for the buttons */
+
+.btn-primary {
+  background-color: blue;
+  color: white;
+}
+
+.btn-success {
+  background-color: green;
+  color: white;
+}
+
+
+.indentline{
+  text-indent: 50px;
+   line-height: 0.5;
+}
+
+
+/* styling for the notes */
+
+.note {
+  color: #555555;
+  font-style: italic;
+  padding: 2px;
+  border-radius: 5px;
+  font-size: 0.9em;
+  margin: 0 2px;
+}
+
+
+/* styling for the supraAdd elements */
+
+.supraAdd {
+    vertical-align: super;
+    font-size: smaller;
+    color: #333;
+}
+
+
+/* styling for the images */
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+figure {
+    text-align: center;
+}
+
+figcaption {
+    margin-top: 8px;
+    color: #666;
+    font-style: italic;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* styling for the page list in the homepage */
+
+ul {
+  list-style-type: disc;
+  padding-left: 40px;
+}
+
+
+/* styling for the page buttons (previous/next) */
+
+.navigation-buttons {
+  text-align: right;
+}
+
+.navigation-buttons a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.navigation-buttons a button {
+  background-color: #d6d8db;
+  color: #495057;
+  border: 1px solid #ced4da;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, 
+              border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.navigation-buttons a button:hover {
+  background-color: #c6c8cb;
+  border-color: #bdbfc1;
+  color: #212529;
+
+.indentedSegment {
+    margin-left: 20px; /* Adjust the value as needed */
+}
+
+
+

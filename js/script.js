@@ -1,6 +1,7 @@
 // Declare variables for getting the xml file for the XSL transformation (folio_xml) and to load the image in IIIF on the page in question (number).
 let tei = document.getElementById("folio");
 let tei_xml = tei.innerHTML;
+tei_xml = '../xml/' + tei_xml;
 let extension = ".xml";
 let folio_xml = tei_xml.concat(extension);
 let page = document.getElementById("page");
@@ -48,7 +49,7 @@ function documentLoader() {
 
     Promise.all([
       fetch(folio_xml).then(response => response.text()),
-      fetch("Frankenstein_text.xsl").then(response => response.text())
+      fetch("../xsl/Frankenstein_text.xsl").then(response => response.text())
     ])
     .then(function ([xmlString, xslString]) {
       var parser = new DOMParser();
@@ -74,7 +75,7 @@ function documentLoader() {
 
     Promise.all([
       fetch(folio_xml).then(response => response.text()),
-      fetch("Frankenstein_meta.xsl").then(response => response.text())
+      fetch("../xsl/Frankenstein_meta.xsl").then(response => response.text())
     ])
     .then(function ([xmlString, xslString]) {
       var parser = new DOMParser();
@@ -157,8 +158,9 @@ function readingMode(event) {
   var deletions = document.getElementsByTagName('del');
   var additions = document.getElementsByClassName('supraAdd');
   var notes = document.getElementsByClassName('note');
+  var metamarks = document.getElementsByClassName('metamark');
 
-  Array.from(deletions).concat(Array.from(notes)).forEach(function(element) {
+  Array.from(deletions).concat(Array.from(notes)).concat(Array.from(metamarks)).forEach(function(element) {
     element.style.display = isReadingMode ? '' : 'none';
   });
 
@@ -225,17 +227,19 @@ document.addEventListener('DOMContentLoaded', function() {
 
     toggleNotesButton.addEventListener('click', function() {
         var notes = document.getElementsByClassName('note');
+        var metamarks = document.getElementsByClassName('metamark');
+
         var isNotesVisible = Array.from(notes).some(note => note.style.display === 'block' || note.style.display === '');
 
         if (isNotesVisible) {
-            Array.from(notes).forEach(function(note) {
+            Array.from(notes).concat(Array.from(metamarks)).forEach(function(note) {
                 note.style.display = 'none';
             });
             this.classList.remove('btn-success');
             this.classList.add('btn-secondary');
             this.textContent = 'Show notes';
         } else {
-            Array.from(notes).forEach(function(note) {
+            Array.from(notes).concat(Array.from(metamarks)).forEach(function(note) {
                 note.style.display = 'block';
             });
             this.classList.remove('btn-secondary');

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Frankenstein</title>
+            <author corresp="#MWS">Mary Wollstonecraft Shelley</author>
+            <editor corresp="#PBS">Percy Bysshe Shelley</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>University of Antwerp</publisher>
+            <date>8 December 2023</date>
+            <availability>
+               <licence target="https://iiif.bodleian.ox.ac.uk/iiif/mirador/53fd0f29-d482-46e1-aa9d-37829b49987d">
+                  <p>Original text by Mary Shelley (1816). Public domain, under a CC-BY-NC 4.0 licence.</p>
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Draft of Frankenstein, [August or September] – [?December] 1816. | Bodleian MS. 
+               Abinger c.56 (formerly designated Dep. 477/1) consists of 62 leaves originally 
+               bound in Notebook A, one of two now disbound notebooks in which Mary W. Shelley 
+               (MWS) drafted the two-volume version of Frankenstein. The draft in c.56 runs 
+               from the beginning to the end of Volume I, concluding just as the Creature is 
+               about to begin his tale to Victor. </p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+  <text>
+      <body>
+         <div type="page" n="23r" rend="recto">
+            <pb facs="#p23r"/>
+            <metamark function="pagenumber"><num><hi rend="circled">79</hi></num></metamark>
+               my view. I did not dare <del type="crossedOut" hand="#MWS" rend="black ink">to</del> return<lb/>
+               to the appartment<add place="infralinear" hand="#MWS" rend="black ink"> <metamark>&#8257;</metamark></add><add place="supralinear" hand="#MWS" rend="black ink">which</add> I inhabited but<lb/><note>'^'is used as a text insertion metamark</note>
+               felt impelled to hurry on although<lb/>
+               wetted by the <del type="crossedOut" hand="#MWS" rend="black ink">drizzling</del> rain which poured<lb/>
+               from a black and comfortless sky.<lb/>
+            <p>
+               I continued walking in this manner<lb/>
+               for some time endeavouring by bodily<lb/>
+               excercise to ease the load that weighed<lb/>
+               upon my mind. I traversed the streets<lb/>
+               without any clear conception of where<lb/>
+               I was or what I was doing: my heart<lb/>
+               palpitated <del type="crossedOut" hand="#MWS" rend="black ink">with</del><add place="infralinear" hand="#PBS" rend="black ink"><metamark>&#8257;</metamark></add><add place="supralinear" hand="#PBS" rend="black ink">in the sickness of</add> fear and I hurried<lb/><note>'^'is used as a text insertion metamark</note>
+               on with irregular steps not daring<lb/>
+               to look about me,<lb/>
+            </p>
+            <lg>
+               <l>"Like one who on a lon<del type="overwritten" hand="#MWS" rend="black ink">s</del><add type="overwritten" hand="#MWS" rend="black ink">es</add>ome road</l>
+               <l>"doth walk in fear and dread</l>
+               <l>"and having once turned round</l>
+               <l><add place="infralinear" hand="#MWS" rend="black ink"><metamark>L</metamark></add><add place="inline" hand="#MWS" rend="black ink">walks on</add></l>
+               <l><note>text is contained within an "L" bracket to indicate line runover</note></l>
+               <l>"<del type="crossedOut" hand="#MWS" rend="black ink">wal</del>And turns no more his head</l>
+               <l>"Because he knows a frightful</l>
+               <l><add place="infralinear" hand="#MWS" rend="black ink"><metamark>L</metamark></add><add place="inline" hand="#MWS" rend="black ink">fiend</add></l>
+               <l><note>text is contained within an "L" bracket to indicate line runover</note></l>
+               <l>"doth close behind hum tread."*</l>
+            </lg>
+            <p><add place="marginleft" hand="#MWS" rend="black ink"><metamark>*</metamark> Coleridge's <lb/>Ancient Mariner</add></p>
+            <p>               
+               Continueing thus, I came at lenght<lb/>
+               <del type="crossedOut" hand="#MWS" rend="black ink">opposite</del><add place="supralinear" hand="#PBS" rend="black ink">opposite to</add> the Inn at which the dili<lb/>
+               -gences and carriages usually stopped. Here<lb/>
+               I paused I knew not why but remained<lb/>
+               some minutes with my eyes fixed on<lb/>
+               a coach that was coming towards me<lb/>
+               from the other end of the street.<lb/>
+               as <del type="crossedOut" hand="#MWS" rend="black ink">I</del><add place="infralinear" hand="#MWS" rend="black ink"><metamark>&#8257;</metamark></add><add place="supralinear" hand="#MWS" rend="black ink">it</add> drew nearer I observed that it<lb/><note>'^'is used as a text insertion metamark</note>
+               was the Swiss diligence; it stopped<lb/>
+               just where I was standing, and on<lb/>
+            </p>
+         </div>
+      </body>
+  </text>
+</TEI>
