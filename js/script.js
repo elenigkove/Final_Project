@@ -109,28 +109,28 @@ function documentLoader() {
   var MaryArray = Array.from(visible_mary);
   var PercyArray = Array.from(visible_percy);
     if (event.target.value == 'both') {
-    // A method that shows all the text written and modified by both hand (in black).
+    // A method that shows all the text written and modified by both hand (in dark grey).
      MaryArray.forEach(function(element) {
-      element.style.color = 'black';
+      element.style.color = '#333';
     });
      PercyArray.forEach(function(element) {
-      element.style.color = 'black';
+      element.style.color = '#333';
     });
     } else if (event.target.value == 'Percy') {
-     // A method that shows all the text modified (add, del) by Percy in blue and the rest in black. 
+     // A method that shows all the text modified (add, del) by Percy in blue and the rest in dark grey. 
      MaryArray.forEach(function(element) {
-      element.style.color = 'black';
+      element.style.color = '#333';
     });
      PercyArray.forEach(function(element) {
       element.style.color = 'blue';
     });
     } else {
-     // A method that shows all the text modified (add, del) by Mary in orange and the text rest in black.
+     // A method that shows all the text modified (add, del) by Mary in orange and the text rest in dark grey.
      MaryArray.forEach(function(element) {
       element.style.color = 'orange';
     });
      PercyArray.forEach(function(element) {
-      element.style.color = 'black';
+      element.style.color = '#333';
     });
     }
   }
