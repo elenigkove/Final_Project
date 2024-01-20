@@ -34,11 +34,13 @@
          <div type="page" n="25r" rend="recto">
             <pb facs="#p25r"/>
             <metamark function="pagenumber"><num><hi rend="circled">83</hi></num></metamark><lb/>
+         <p indent="false">
             believe that so great a good fortune<lb/>
             could have befallen me; but when<lb/>
             I <del type="crossedOut" hand="#MWS" rend="black ink">was</del> <add hand="#PBS" place="supralinear" rend="black ink">became</add> assured that my enemy had<lb/>
             indeed fled, I clapped my hands for<lb/>
             joy and ran down to Henry.<lb/>
+         </p>
          <p>
             We ascended into my room &amp; present<lb/>
             ly the servant brought breakfast:<lb/>
@@ -68,7 +70,7 @@
             Do not ask me cried I, putting my<lb/>
             hands <del type="crossedOut" hand="#MWS" rend="black ink">fef</del> before my eyes, for I thought<lb/>
             I saw <hi rend="u">the spectre</hi> glide into the<lb/>
-          </p>
+         </p>
          </div>
       </body>
   </text>

@@ -33,9 +33,11 @@
       <div type="page" n="23v" rend="verso">
           <pb facs="#p23v"/>
           <metamark function="pagenumber"><num><hi rend="circled">80</hi></num></metamark>
+        <p indent="false">
            the doors being opened <unclear>I</unclear> perceived Henry<lb/>
            Clerval, who on <del type="crossedOut" hand="#MWS" rend="black ink">seee</del> seeing me instantly<lb/>
            sprung out.<lb/>
+        </p>
         <p>
            "My dear Frankenstien," exclaimed he<lb/>
            "How glad I am to see you; how<lb/>

@@ -1,7 +1,11 @@
-// Declare variables for getting the xml file for the XSL transformation (folio_xml) and to load the image in IIIF on the page in question (number).
 let tei = document.getElementById("folio");
-let tei_xml = tei.innerHTML;
+var currentURL = window.location.href;
+var urlParams = new URLSearchParams(new URL(currentURL).search);
+var pValue = urlParams.get("p");
+let tei_xml = pValue;
 tei_xml = '../xml/' + tei_xml;
+tei.innerHTML = pValue;
+generateNavigationButtons(pValue);
 let extension = ".xml";
 let folio_xml = tei_xml.concat(extension);
 let page = document.getElementById("page");
@@ -152,99 +156,125 @@ function documentLoader() {
 
 
  // A function that will display the text as a reading text by clicking on a button, meaning that all the deletions and notes are removed and the additions are shown inline (not in superscript)
-var isReadingMode = false;
+    var isReadingMode = false;
 
-function readingMode(event) {
-  var deletions = document.getElementsByTagName('del');
-  var additions = document.getElementsByClassName('supraAdd');
-  var notes = document.getElementsByClassName('note');
-  var metamarks = document.getElementsByClassName('metamark');
+    function readingMode(event) {
+      var deletions = document.getElementsByTagName('del');
+      var additions = document.getElementsByClassName('supraAdd');
+      var notes = document.getElementsByClassName('note');
+      var metamarks = document.getElementsByClassName('metamark');
 
-  Array.from(deletions).concat(Array.from(notes)).concat(Array.from(metamarks)).forEach(function(element) {
-    element.style.display = isReadingMode ? '' : 'none';
+      Array.from(deletions).concat(Array.from(notes)).concat(Array.from(metamarks)).forEach(function(element) {
+        element.style.display = isReadingMode ? '' : 'none';
+      });
+
+      Array.from(additions).forEach(function(addition) {
+        if (isReadingMode) {
+          addition.style.verticalAlign = 'super';
+          addition.style.fontSize = '';
+        } else {
+          addition.style.verticalAlign = 'baseline';
+          addition.style.fontSize = 'inherit';
+        }
+      });
+
+      isReadingMode = !isReadingMode;
+    }
+
+
+  // Functions for the "Toggle deletions", "Reading mode" and "Toggle notes" buttons
+  document.addEventListener('DOMContentLoaded', function() {
+      var toggleDeletionsButton = document.getElementById('toggleDeletionsButton');
+      toggleDeletionsButton.textContent = 'Hide deletions';
+      toggleDeletionsButton.classList.add('btn-success');
+
+      toggleDeletionsButton.addEventListener('click', function() {
+          var deletions = document.getElementsByTagName('del');
+          var areDeletionsVisible = Array.from(deletions).some(del => del.style.display !== 'none');
+
+          if (areDeletionsVisible) {
+              Array.from(deletions).forEach(function(del) {
+                  del.style.display = 'none';
+              });
+              this.classList.remove('btn-success');
+              this.classList.add('btn-secondary');
+              this.textContent = 'Show deletions';
+          } else {
+              Array.from(deletions).forEach(function(del) {
+                  del.style.display = ''; // or 'block', depending on how they should be displayed
+              });
+              this.classList.remove('btn-secondary');
+              this.classList.add('btn-success');
+              this.textContent = 'Hide deletions';
+          }
+      });
   });
 
-  Array.from(additions).forEach(function(addition) {
-    if (isReadingMode) {
-      addition.style.verticalAlign = 'super';
-      addition.style.fontSize = '';
+
+  document.getElementById('readingModeButton').addEventListener('click', function() {
+    this.classList.toggle('btn-primary');
+    this.classList.toggle('btn-success');
+
+    if (this.classList.contains('btn-success')) {
+      this.textContent = 'Reading mode';
     } else {
-      addition.style.verticalAlign = 'baseline';
-      addition.style.fontSize = 'inherit';
+      this.textContent = 'Reading mode';
     }
   });
 
-  isReadingMode = !isReadingMode;
-}
+
+  document.addEventListener('DOMContentLoaded', function() {
+      var toggleNotesButton = document.getElementById('toggleNotesButton');
+      toggleNotesButton.textContent = 'Hide notes'; // Set initial button text
+      toggleNotesButton.classList.add('btn-success'); // Set initial button class
+
+      toggleNotesButton.addEventListener('click', function() {
+          var notes = document.getElementsByClassName('note');
+          var metamarks = document.getElementsByClassName('metamark');
+
+          var isNotesVisible = Array.from(notes).some(note => note.style.display === 'block' || note.style.display === '');
+
+          if (isNotesVisible) {
+              Array.from(notes).concat(Array.from(metamarks)).forEach(function(note) {
+                  note.style.display = 'none';
+              });
+              this.classList.remove('btn-success');
+              this.classList.add('btn-secondary');
+              this.textContent = 'Show notes';
+          } else {
+              Array.from(notes).concat(Array.from(metamarks)).forEach(function(note) {
+                  note.style.display = 'block';
+              });
+              this.classList.remove('btn-secondary');
+              this.classList.add('btn-success');
+              this.textContent = 'Hide notes';
+          }
+      });
+  });
 
 
+  function generateNavigationButtons(currentPage) {
+    // List of pages in the desired order
+    var pages = ["21r", "21v", "22r", "22v", "23r", "23v", "24r", "24v", "25r", "25v"];
 
-// Functions for the "Toggle deletions", "Reading mode" and "Toggle notes" buttons
-document.addEventListener('DOMContentLoaded', function() {
-    var toggleDeletionsButton = document.getElementById('toggleDeletionsButton');
-    toggleDeletionsButton.textContent = 'Hide deletions';
-    toggleDeletionsButton.classList.add('btn-success');
+    // Find the index of the current page
+    var currentIndex = pages.indexOf(currentPage);
 
-    toggleDeletionsButton.addEventListener('click', function() {
-        var deletions = document.getElementsByTagName('del');
-        var areDeletionsVisible = Array.from(deletions).some(del => del.style.display !== 'none');
+    // Generate HTML for the previous page button
+    var previousPageHTML = "";
+    if (currentIndex > 0) {
+      var previousPage = pages[currentIndex - 1];
+      previousPageHTML = '<a href="page.html?p=' + previousPage + '"><button class="btn btn-secondary">Previous page</button></a>&nbsp;';
+    }
 
-        if (areDeletionsVisible) {
-            Array.from(deletions).forEach(function(del) {
-                del.style.display = 'none';
-            });
-            this.classList.remove('btn-success');
-            this.classList.add('btn-secondary');
-            this.textContent = 'Show deletions';
-        } else {
-            Array.from(deletions).forEach(function(del) {
-                del.style.display = ''; // or 'block', depending on how they should be displayed
-            });
-            this.classList.remove('btn-secondary');
-            this.classList.add('btn-success');
-            this.textContent = 'Hide deletions';
-        }
-    });
-});
+    // Generate HTML for the next page button
+    var nextPageHTML = "";
+    if (currentIndex < pages.length - 1) {
+      var nextPage = pages[currentIndex + 1];
+      nextPageHTML = '&nbsp;<a href="page.html?p=' + nextPage + '"><button class="btn btn-secondary">Next page</button></a>';
+    }
 
-
-document.getElementById('readingModeButton').addEventListener('click', function() {
-  this.classList.toggle('btn-primary');
-  this.classList.toggle('btn-success');
-
-  if (this.classList.contains('btn-success')) {
-    this.textContent = 'Reading mode';
-  } else {
-    this.textContent = 'Reading mode';
+    // Insert the HTML into the #navigation-buttons div
+    var navigationButtonsDiv = document.getElementById('navigation-buttons');
+    navigationButtonsDiv.innerHTML = previousPageHTML + nextPageHTML;
   }
-});
-
-
-document.addEventListener('DOMContentLoaded', function() {
-    var toggleNotesButton = document.getElementById('toggleNotesButton');
-    toggleNotesButton.textContent = 'Hide notes'; // Set initial button text
-    toggleNotesButton.classList.add('btn-success'); // Set initial button class
-
-    toggleNotesButton.addEventListener('click', function() {
-        var notes = document.getElementsByClassName('note');
-        var metamarks = document.getElementsByClassName('metamark');
-
-        var isNotesVisible = Array.from(notes).some(note => note.style.display === 'block' || note.style.display === '');
-
-        if (isNotesVisible) {
-            Array.from(notes).concat(Array.from(metamarks)).forEach(function(note) {
-                note.style.display = 'none';
-            });
-            this.classList.remove('btn-success');
-            this.classList.add('btn-secondary');
-            this.textContent = 'Show notes';
-        } else {
-            Array.from(notes).concat(Array.from(metamarks)).forEach(function(note) {
-                note.style.display = 'block';
-            });
-            this.classList.remove('btn-secondary');
-            this.classList.add('btn-success');
-            this.textContent = 'Hide notes';
-        }
-    });
-});

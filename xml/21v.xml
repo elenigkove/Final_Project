@@ -33,8 +33,10 @@
            <div type="page" n="21v" rend="verso">
                <pb facs="#p21v"/>
                <metamark function="pagenumber"><num><hi rend="circled">76</hi></num></metamark><lb/>
-                  his shrivelled complexion and strait<lb/>
-                  black lips.<lb/>                
+                <p indent="false">
+                   his shrivelled complexion and strait<lb/>
+                   black lips.<lb/>
+                </p>
                 <p>
                    The different accidents of life are<lb/>
                    not so changeable at the feelings of hu<lb/>

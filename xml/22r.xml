@@ -33,6 +33,7 @@
         <div type="page" n="22v" rend="recto">
           <pb facs="#p22r"/>
           <metamark function="pagenumber"><num><hi rend="circled">77</hi></num></metamark><lb/>
+          <p indent="false">
            to change and I thought that I held <lb/>
            the corpse of my dead mother in my arms<del type="overwritten" hand="#MWS" rend="black ink">,</del> <add place="overwritten" hand="#PBS" rend="black ink">:</add><lb/>
            <del type="overwritten" hand="#MWS" rend="black ink">a</del><add place="overwritten" hand="#MWS" rend="black ink">A</add> shroud envolepped her form &amp; I saw<lb/>
@@ -61,7 +62,8 @@
            sound as if it were to announce the<lb/>
            arrival of the demoniacal corpse to<lb/>
            which I had so miserabl<del type="overwritten" hand="#MWS" rend="black ink">e</del><add place="overwritten" hand="#PBS" rend="black ink">y</add> given life.<lb/>
-        <p>
+          </p>        
+          <p>
           Oh! no mortal could support<lb/>
           the horror of that countenance. A<lb/>
           mummy <add place="infralinear" hand="#MWS" rend="black ink"><metamark>&#8257;</metamark></add><add place="supralinear" hand="#MWS" rend="black ink">again</add> endued with <add place="supralinear" hand="#PBS" rend="black ink">animation</add> <del type="crossedOut" hand="#MWS" rend="black ink">life</del> could not be<lb/><note>'^'is used as a text insertion metamark</note>

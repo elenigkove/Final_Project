@@ -19,8 +19,8 @@
         </span>
     </xsl:template>
 
-    <!-- template for notes by Percy Shelly -->
 
+    <!-- template for notes by Percy Shelly -->
 
     <xsl:template match="tei:body">
         <div class="row">
@@ -89,9 +89,6 @@
             <xsl:apply-templates/>
         </del>
     </xsl:template>
-
-
-
 
 
     <!-- all the supralinear additions are given in a span with the class supraAdd, make sure to put this class in superscript in the CSS file -->
