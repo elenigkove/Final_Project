@@ -91,7 +91,7 @@
     </xsl:template>
 
 
-    <!-- all the supralinear additions are given in a span with the class supraAdd, make sure to put this class in superscript in the CSS file -->
+    <!-- transforming the supralinear additions are given in a span with the class supraAdd -->
     
     <xsl:template match="tei:add[@place='supralinear']">
         <span>
@@ -131,7 +131,7 @@
     </xsl:template>
     
 
-        <!-- transforming additions with the attribute "infralinear" -->
+    <!-- transforming additions with the attribute "infralinear" -->
     
     <xsl:template match="tei:add[@place='infralinear']">
         <span>
@@ -200,5 +200,3 @@
 
   
     </xsl:stylesheet>
-
-

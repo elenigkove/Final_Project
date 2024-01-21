@@ -49,7 +49,7 @@ var mirador = Mirador.viewer({
 
 
 // Function to transform the text encoded in TEI with the xsl stylesheet "Frankenstein_text.xsl", this will apply the templates and output the text in the html <div id="text">
-function documentLoader() {
+  function documentLoader() {
 
     Promise.all([
       fetch(folio_xml).then(response => response.text()),
@@ -121,7 +121,7 @@ function documentLoader() {
       element.style.color = '#333';
     });
     } else if (event.target.value == 'Percy') {
-     // A method that shows all the text modified (add, del) by Percy in blue and the rest in dark grey. 
+    // A method that shows all the text modified (add, del) by Percy in blue and the rest in dark grey. 
      MaryArray.forEach(function(element) {
       element.style.color = '#333';
     });
@@ -129,7 +129,7 @@ function documentLoader() {
       element.style.color = 'blue';
     });
     } else {
-     // A method that shows all the text modified (add, del) by Mary in orange and the text rest in dark grey.
+    // A method that shows all the text modified (add, del) by Mary in orange and the text rest in dark grey.
      MaryArray.forEach(function(element) {
       element.style.color = 'orange';
     });
@@ -155,7 +155,7 @@ function documentLoader() {
   }
 
 
- // A function that will display the text as a reading text by clicking on a button, meaning that all the deletions and notes are removed and the additions are shown inline (not in superscript)
+  // A function that will display the text as a reading text by clicking on a button, meaning that all the deletions and notes are removed and the additions are shown inline (not in superscript)
     var isReadingMode = false;
 
     function readingMode(event) {
@@ -201,7 +201,7 @@ function documentLoader() {
               this.textContent = 'Show deletions';
           } else {
               Array.from(deletions).forEach(function(del) {
-                  del.style.display = ''; // or 'block', depending on how they should be displayed
+                  del.style.display = ''
               });
               this.classList.remove('btn-secondary');
               this.classList.add('btn-success');
